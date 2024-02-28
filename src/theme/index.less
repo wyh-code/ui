@@ -1,0 +1,64 @@
+
+:root {
+  // 颜色
+  --color-1: #f1f3f6;
+  --color-2: #f7f8fa;
+  --color-3: #F04631;
+  --color-4: #21BA34;
+  --color-5: #0068FF;
+  --color-6: #F7B900;
+
+  --color-7: #111720;
+  --color-8: #3e495c;
+  --color-9: #3e495cb3;
+  --color-10: #8f9aa9;
+  --color-11: #bcc5d1;
+
+  // 状态色
+  --stauts-disabled: var(--color-2);
+  --status-red: var(--color-3);
+  --status-green: var(--color-4);
+  --status-blue: var(--color-5);
+  --status-yellow: var(--color-6);
+
+  // 间距
+  --space-m: 6px;
+  --space-l: 8px;
+  --space-base: var(--space-l);
+  --space: calc(var(--space-base) / 2);
+  --space-1: calc(var(--space-base) * 1);
+  --space-2: calc(var(--space-base) * 2);
+  --space-3: calc(var(--space-base) * 3);
+
+  --border-radius: var(--space-base);
+
+  // 字体
+  --font-family: Roboto,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+  --font-size: 12px;
+  --font-size-1: 14px;
+  --font-size-2: 16px;
+  --font-size-3: 18px;
+  --font-size-4: 20px;
+
+  --font-color: var(--color-7);
+  --font-color-1: var(--color-8);
+  --font-color-2: var(--color-9);
+  --font-color-3: var(--color-10);
+  --font-color-4: var(--color-11);
+
+  --border-color: var(--color-1);
+  --tag-bg: var(--color-1);
+  --table-header-bg: var(--color-2);
+  --table-message-font-size: var(--font-size);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*[class^="ostore-ui"] {
+  font-size: var(--font-size-1);
+  font-family: var(--font-family);
+}

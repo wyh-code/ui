@@ -1,0 +1,41 @@
+@import url('../../theme/index.less');
+
+.ostore-ui-table {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  line-height: 1.5;
+  overflow: hidden;
+
+  table {
+    width: 100%;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  th, &-cell-wraper{
+    padding: var(--space-2);
+  }
+
+  th {
+    background: var(--table-header-bg);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  tr:not(:last-child) td {
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  &-cell-message-wraper {
+    position: relative;
+    background: #fff;
+  }
+
+  &-cell-message {
+    position: absolute;
+    font-size: var(--font-size);
+    color: var(--status-red);
+    bottom: 2px;
+    left: var(--space-2);
+    line-height: 1;
+  }
+}
